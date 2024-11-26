@@ -1,0 +1,167 @@
+<div class="mainpage">
+    <div class="center" [ngClass]="{ 'move-to-top-left': moveCenter }">
+
+
+
+
+
+
+        <div class="s1" (click)="mountTapp()">
+            <div class="p1" *ngIf="mountTapped"></div>
+            <div class="line0" *ngIf="mountTapped">
+                <svg width="120%" height="50">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="white" />
+                        </marker>
+                    </defs>
+                    <line x1="10" y1="25" x2="290" y2="25" stroke="white" stroke-width="2" stroke-dasharray="5,5"
+                        marker-end="url(#arrowhead)" class="grow-right-to-left" />
+                </svg>
+            </div>
+            <div (click)="iconTap('mount1')" class="areal_platforms" *ngIf="mountTapped"></div>
+        </div>
+        <div class="s2" (click)="landTapp()">
+            <div class="p2" *ngIf="landTapped"></div>
+            <div class="p3" *ngIf="landTapped"></div>
+            <div class="monitoring_network" *ngIf="landTapped"></div>
+            <div class="survey_platform" *ngIf="landTapped"></div>
+            <div class="line1" *ngIf="landTapped">
+                <svg width="120%" height="50">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="white" />
+                        </marker>
+                    </defs>
+                    <line x1="10" y1="25" x2="290" y2="25" stroke="white" stroke-width="2" stroke-dasharray="5,5"
+                        marker-end="url(#arrowhead)" class="grow-right-to-left" />
+                </svg>
+            </div>
+            <div class="line2" *ngIf="landTapped">
+                <svg width="120%" height="50">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="white" />
+                        </marker>
+                    </defs>
+                    <line x1="10" y1="25" x2="290" y2="25" stroke="white" stroke-width="2" stroke-dasharray="5,5"
+                        marker-end="url(#arrowhead)" class="grow-left-to-right" />
+                </svg>
+            </div>
+        </div>
+        <div class="s3" (click)="roadTap()">
+            <div class="p4" *ngIf="roadTapped"></div>
+            <div class="p5" *ngIf="roadTapped"></div>
+            <div class="line3" *ngIf="roadTapped">
+                <svg width="120%" height="50">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="white" />
+                        </marker>
+                    </defs>
+                    <line x1="10" y1="25" x2="290" y2="25" stroke="white" stroke-width="2" stroke-dasharray="5,5"
+                        marker-end="url(#arrowhead)" class="grow-left-to-right" />
+                </svg>
+            </div>
+            <div class="line4" *ngIf="roadTapped">
+                <svg width="120%" height="50">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="white" />
+                        </marker>
+                    </defs>
+                    <line x1="10" y1="25" x2="290" y2="25" stroke="white" stroke-width="2" stroke-dasharray="5,5"
+                        marker-end="url(#arrowhead)" class="grow-right-to-left" />
+                </svg>
+            </div>
+        </div>
+        <div class="s4" (click)="seaTap()">
+            <div class="p6" *ngIf="seaTapped"></div>
+            <div class="p7" *ngIf="seaTapped"></div>
+            <div class="monitoring_station" *ngIf="seaTapped"></div>
+            <div class="marine_survey" *ngIf="seaTapped"></div>
+            <div class="line5" *ngIf="seaTapped">
+                <svg width="120%" height="50">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="white" />
+                        </marker>
+                    </defs>
+                    <line x1="10" y1="25" x2="290" y2="25" stroke="white" stroke-width="2" stroke-dasharray="5,5"
+                        marker-end="url(#arrowhead)" class="grow-left-to-right" />
+                </svg>
+            </div>
+            <div class="line6" *ngIf="seaTapped">
+                <svg width="120%" height="50">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="white" />
+                        </marker>
+                    </defs>
+                    <line x1="10" y1="25" x2="290" y2="25" stroke="white" stroke-width="2" stroke-dasharray="5,5"
+                        marker-end="url(#arrowhead)" class="grow-right-to-left" />
+                </svg>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="problem_list_left" *ngIf="list">
+
+        <h2 class="problem_title" style="color: white; font-weight: 800;">Water Resource1</h2>
+        <div class="sol">
+
+
+        </div>
+    </div>
+    <!-- <div class="problem_list_left2" *ngIf="list">
+
+    </div>
+    <div class="problem_list_left3" *ngIf="list">
+
+    </div> -->
+    <div class="problem_list_right" *ngIf="list">
+        <h2 class="problem_title" style="color: white; font-weight: 800;">Water Resource2</h2>
+        <div class="sol2">
+
+        </div>
+    </div>
+    <!-- <div class="problem_list_right2" *ngIf="list">
+
+    </div>
+    <div class="problem_list_right3" *ngIf="list">
+
+    </div> -->
+    <div class="tri" *ngIf="showProblem" [ngClass]="{'trii' :closeTri }" (click)="triTap()">
+
+
+        <div class="l-center">
+            <img src="../../assets/1.png" alt="">
+        </div>
+        <div class="l-top"></div>
+        <div class="l-bottom"></div>
+        <div class="c-top"></div>
+        <div class="c-cent"></div>
+        <div class="c-bottom"></div>
+        <div class="r-top" (click)="problem1Tap()"></div>
+        <div class="r-center" (click)="problem2Tap()"></div>
+        <div class="r-bottom"></div>
+
+    </div>
+
+
+    <div class="animator" *ngIf="openProblems">
+        <img *ngFor="let img of images; let i = index" [src]="img.src" [alt]="img.alt" [ngStyle]="getStyle(i)"
+            (click)="selectImage(i)" draggable="true" (dragstart)="onDragStart($event, i)" />
+    </div>
+    <div class="details" (dragover)="onDragOver($event)" (drop)="onDrop($event)" *ngIf="openProblems">
+        <!-- This will display the dragged image name -->
+        <!-- <p *ngIf="droppedImageName">Dropped Image: {{ droppedImageName }}</p> -->
+    </div>
+
+
+
+
+
+</div>
