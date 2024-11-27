@@ -1,4 +1,8 @@
 <div class="mainpage">
+    <h1>Connecting <br>Environmental Science <br>Engineering and Technology</h1>
+    <div class="logo">
+
+    </div>
     <div class="center" [ngClass]="{ 'move-to-top-left': moveCenter }">
 
 
@@ -7,8 +11,13 @@
 
 
         <div class="s1" (click)="mountTapp()">
-            <div class="p1" *ngIf="mountTapped"></div>
+            <div class="tit">
+                <div class="p1" *ngIf="mountTapped" (click)="iconTap('mount1')"></div>
+
+            </div>
+            <div class="p1" *ngIf="mountTapped" (click)="iconTap('mount1')"></div>
             <div class="line0" *ngIf="mountTapped">
+                <span class="sp">Climate Change</span>
                 <svg width="120%" height="50">
                     <defs>
                         <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
@@ -19,14 +28,29 @@
                         marker-end="url(#arrowhead)" class="grow-right-to-left" />
                 </svg>
             </div>
-            <div (click)="iconTap('mount1')" class="areal_platforms" *ngIf="mountTapped"></div>
+            <div class="p11" *ngIf="mountTapped" (click)="iconTap('mount1')"></div>
+            <div class="line01" *ngIf="mountTapped">
+                <span class="sp">Air Pollution</span>
+                <svg width="120%" height="50">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="white" />
+                        </marker>
+                    </defs>
+                    <line x1="10" y1="25" x2="290" y2="25" stroke="white" stroke-width="2" stroke-dasharray="5,5"
+                        marker-end="url(#arrowhead)" class="grow-right-to-left" />
+                </svg>
+            </div>
+            <div class="areal_platforms" *ngIf="mountTapped"></div>
         </div>
         <div class="s2" (click)="landTapp()">
-            <div class="p2" *ngIf="landTapped"></div>
-            <div class="p3" *ngIf="landTapped"></div>
+            <div class="p2" *ngIf="landTapped" (click)="iconTap('mount1')"></div>
+            <div class="p3" *ngIf="landTapped" (click)="iconTap('mount1')"></div>
+            <div class="p03" *ngIf="landTapped" (click)="iconTap('mount1')"></div>
             <div class="monitoring_network" *ngIf="landTapped"></div>
             <div class="survey_platform" *ngIf="landTapped"></div>
             <div class="line1" *ngIf="landTapped">
+                <span class="sp">Ground Water</span>
                 <svg width="120%" height="50">
                     <defs>
                         <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
@@ -38,6 +62,7 @@
                 </svg>
             </div>
             <div class="line2" *ngIf="landTapped">
+                <span class="sp">Water Resource</span>
                 <svg width="120%" height="50">
                     <defs>
                         <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
@@ -48,22 +73,38 @@
                         marker-end="url(#arrowhead)" class="grow-left-to-right" />
                 </svg>
             </div>
+            <div class="line02" *ngIf="landTapped">
+                <span class="sp">Energy Management</span>
+                <svg width="120%" height="50">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="white" />
+                        </marker>
+                    </defs>
+                    <line x1="10" y1="25" x2="290" y2="25" stroke="white" stroke-width="2" stroke-dasharray="5,5"
+                        marker-end="url(#arrowhead)" class="grow-left-to-right" />
+                </svg>
+            </div>
+            <div class="line3" *ngIf="landTapped">
+                <span class="sp">Eco System</span>
+                <svg width="120%" height="50">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="white" />
+                        </marker>
+                    </defs>
+                    <line x1="10" y1="25" x2="290" y2="25" stroke="white" stroke-width="2" stroke-dasharray="5,5"
+                        marker-end="url(#arrowhead)" class="grow-left-to-right" />
+                </svg>
+            </div>
+            <div class="p4" *ngIf="landTapped" (click)="iconTap('mount1')"></div>
         </div>
         <div class="s3" (click)="roadTap()">
-            <div class="p4" *ngIf="roadTapped"></div>
-            <div class="p5" *ngIf="roadTapped"></div>
-            <div class="line3" *ngIf="roadTapped">
-                <svg width="120%" height="50">
-                    <defs>
-                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-                            <polygon points="0 0, 10 3.5, 0 7" fill="white" />
-                        </marker>
-                    </defs>
-                    <line x1="10" y1="25" x2="290" y2="25" stroke="white" stroke-width="2" stroke-dasharray="5,5"
-                        marker-end="url(#arrowhead)" class="grow-left-to-right" />
-                </svg>
-            </div>
+
+            <div class="p5" *ngIf="roadTapped" (click)="iconTap('mount1')"></div>
+
             <div class="line4" *ngIf="roadTapped">
+                <span class="sp">Shoreline Erosion</span>
                 <svg width="120%" height="50">
                     <defs>
                         <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
@@ -76,11 +117,12 @@
             </div>
         </div>
         <div class="s4" (click)="seaTap()">
-            <div class="p6" *ngIf="seaTapped"></div>
-            <div class="p7" *ngIf="seaTapped"></div>
+            <!-- <div class="p6" *ngIf="seaTapped" (click)="iconTap('mount1')"></div> -->
+            <div class="p7" *ngIf="seaTapped" (click)="iconTap('mount1')"></div>
             <div class="monitoring_station" *ngIf="seaTapped"></div>
             <div class="marine_survey" *ngIf="seaTapped"></div>
             <div class="line5" *ngIf="seaTapped">
+                <span class="sp">Marine Pollution</span>
                 <svg width="120%" height="50">
                     <defs>
                         <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
@@ -91,7 +133,8 @@
                         marker-end="url(#arrowhead)" class="grow-left-to-right" />
                 </svg>
             </div>
-            <div class="line6" *ngIf="seaTapped">
+            <!-- <div class="line6" *ngIf="seaTapped">
+                <span class="sp">Climate Change</span>
                 <svg width="120%" height="50">
                     <defs>
                         <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
@@ -101,52 +144,34 @@
                     <line x1="10" y1="25" x2="290" y2="25" stroke="white" stroke-width="2" stroke-dasharray="5,5"
                         marker-end="url(#arrowhead)" class="grow-right-to-left" />
                 </svg>
-            </div>
+            </div> -->
         </div>
 
 
     </div>
 
-    <div class="problem_list_left" *ngIf="list">
-
-        <h2 class="problem_title" style="color: white; font-weight: 800;">Water Resource1</h2>
-        <div class="sol">
 
 
-        </div>
-    </div>
-    <!-- <div class="problem_list_left2" *ngIf="list">
-
-    </div>
-    <div class="problem_list_left3" *ngIf="list">
-
-    </div> -->
-    <div class="problem_list_right" *ngIf="list">
-        <h2 class="problem_title" style="color: white; font-weight: 800;">Water Resource2</h2>
-        <div class="sol2">
-
-        </div>
-    </div>
     <!-- <div class="problem_list_right2" *ngIf="list">
 
     </div>
     <div class="problem_list_right3" *ngIf="list">
 
     </div> -->
-    <div class="tri" *ngIf="showProblem" [ngClass]="{'trii' :closeTri }" (click)="triTap()">
+    <div class="tri" *ngIf="!openProblems && showProblem" [ngClass]="{'trii' :closeTri }" (click)="triTap()">
 
 
         <div class="l-center">
-            <img src="../../assets/1.png" alt="">
+
         </div>
         <div class="l-top"></div>
         <div class="l-bottom"></div>
-        <div class="c-top"></div>
-        <div class="c-cent"></div>
-        <div class="c-bottom"></div>
-        <div class="r-top" (click)="problem1Tap()"></div>
-        <div class="r-center" (click)="problem2Tap()"></div>
-        <div class="r-bottom"></div>
+        <div class="c-top" (click)="tapProblems(3)"></div>
+        <div class="c-cent" (click)="tapProblems(4)"></div>
+        <div class="c-bottom" (click)="tapProblems(5)"></div>
+        <div class="r-top" (click)="tapProblems(0)"></div>
+        <div class="r-center" (click)="tapProblems(1)"></div>
+        <div class="r-bottom" (click)="tapProblems(2)"></div>
 
     </div>
 
@@ -156,12 +181,499 @@
             (click)="selectImage(i)" draggable="true" (dragstart)="onDragStart($event, i)" />
     </div>
     <div class="details" (dragover)="onDragOver($event)" (drop)="onDrop($event)" *ngIf="openProblems">
-        <!-- This will display the dragged image name -->
-        <!-- <p *ngIf="droppedImageName">Dropped Image: {{ droppedImageName }}</p> -->
     </div>
 
 
 
 
+    <div class="fullscreen" (click)="toggleFullScreen()"></div>
 
+    <!-- Solutions -->
+
+    <div class="folders" (click)="tapLidar()" *ngIf="MonitoringStationlist">
+        <h2>Aerial Lidar Surveys</h2>
+    </div>
+    <div class="folder2" (click)="tapDroneHabbit()" *ngIf="MonitoringStationlist">
+        <h2>Drone Habitat Survey</h2>
+    </div>
+    <div class="folder3" (click)="tapDroneWeather()" *ngIf="MonitoringStationlist">
+        <h2>Drone Weather & Air Quality Monitoring</h2>
+    </div>
+
+
+
+
+    <!-- sub folders -->
+
+    <div class="problem_list_left" *ngIf="selectedlidar">
+
+
+        <img (click)="openImagePopup('../../assets/Aerial Platforms/Aerial Lidar Surveys/lidar survey1.jpg')"
+            src="../../assets/Aerial Platforms/Aerial Lidar Surveys/lidar survey1.jpg" alt="">
+
+    </div>
+    <div class="problem_list_right" *ngIf="selectedlidar">
+
+        <img (click)="openImagePopup('../../assets/Aerial Platforms/Aerial Lidar Surveys/Teledyne-Optech-delivers-first-CZMIL-SuperNova.jpg')"
+            src="../../assets/Aerial Platforms/Aerial Lidar Surveys/Teledyne-Optech-delivers-first-CZMIL-SuperNova.jpg"
+            alt="">
+    </div>
+
+
+    <div class="problem_list_left" *ngIf="selecteddroneHabbit">
+
+        <img (click)="openImagePopup('../../assets/Aerial Platforms/Drone Habitat Survey/Drone Habitat Survey.jpg')"
+            src="../../assets/Aerial Platforms/Drone Habitat Survey/Drone Habitat Survey.jpg" alt="">
+
+    </div>
+    <div class="problem_list_right" *ngIf="selecteddroneHabbit">
+
+        <img (click)="openImagePopup('../../assets/Aerial Platforms/Drone Habitat Survey/Drone habitat1.png')"
+            src="../../assets/Aerial Platforms/Drone Habitat Survey/Drone habitat1.png" alt="">
+    </div>
+
+    <div class="problem_list_left" *ngIf="selecteddroneWeather">
+
+        <img (click)="openImagePopup('../../assets/Aerial Platforms/Drone Weather & Air Quality Monitoring/drone air quality.jpg')"
+            src="../../assets/Aerial Platforms/Drone Weather & Air Quality Monitoring/drone air quality.jpg" alt="">
+
+    </div>
+    <div class="problem_list_right" *ngIf="selecteddroneWeather">
+
+        <img (click)="openImagePopup('../../assets/Aerial Platforms/Drone Weather & Air Quality Monitoring/meteo2.png')"
+            src="../../assets/Aerial Platforms/Drone Weather & Air Quality Monitoring/meteo2.png" alt="">
+    </div>
+
+
+
+    <!-- Marine Survey Folder -->
+
+    <div class="marine_survey_folder1" (click)="tapBathy()" *ngIf="MarineSurvey">
+        Bathymetry Surveys
+    </div>
+    <div class="marine_survey_folder2" (click)="tapMarineEcology()" *ngIf="MarineSurvey">
+        Marine Ecology Surveys
+    </div>
+
+    <!-- Marine Survey-- Bathymetry Survey Data -->
+
+    <div class="bathy_survey2" *ngIf="selectedBathymetric">
+
+
+        <img (click)="openImagePopup('../../assets/Marine Survey Platforms/Bathymetry Surveys/Bathy survey2.jpg')"
+            src="../../assets/Marine Survey Platforms/Bathymetry Surveys/Bathy survey2.jpg" alt="">
+    </div>
+    <div class="bathymetric_survey" *ngIf="selectedBathymetric">
+
+        <img (click)="openImagePopup('../../assets/Marine Survey Platforms/Bathymetry Surveys/bathymetric survey.jpg')"
+            src="../../assets/Marine Survey Platforms/Bathymetry Surveys/bathymetric survey.jpg" alt="">
+    </div>
+    <div class="hydrographic_survey1" *ngIf="selectedBathymetric">
+
+        <img (click)="openImagePopup('../../assets/Marine Survey Platforms/Bathymetry Surveys/Hydrographic survey1.jpg')"
+            src="../../assets/Marine Survey Platforms/Bathymetry Surveys/Hydrographic survey1.jpg" alt="">
+    </div>
+    <div class="hydrographic_surveys2" *ngIf="selectedBathymetric">
+        <img (click)="openImagePopup('../../assets/Marine Survey Platforms/Bathymetry Surveys/hydrographic survey2.jpg')"
+            src="../../assets/Marine Survey Platforms/Bathymetry Surveys/hydrographic survey2.jpg" alt="">
+    </div>
+
+    <!-- Marine Survey-- Marine Ecology Survey Data -->
+
+    <div class="ecology_monitoring1" *ngIf="selectedMarineEcology">
+        <img (click)="openImagePopup('../../assets/Marine Survey Platforms/Marine Ecology Surveys/ecology monitoring1.jpg')"
+            src="../../assets/Marine Survey Platforms/Marine Ecology Surveys/ecology monitoring1.jpg" alt="">
+    </div>
+    <div class="ecology_monitoring2" *ngIf="selectedMarineEcology">
+        <img (click)="openImagePopup('../../assets/Marine Survey Platforms/Marine Ecology Surveys/ecologymonitoring2.jpg')"
+            src="../../assets/Marine Survey Platforms/Marine Ecology Surveys/ecologymonitoring2.jpg" alt="">
+    </div>
+    <div class="ecology_survey" *ngIf="selectedMarineEcology">
+        <img (click)="openImagePopup('../../assets/Marine Survey Platforms/Marine Ecology Surveys/ecologysurvey.jpg')"
+            src="../../assets/Marine Survey Platforms/Marine Ecology Surveys/ecologysurvey.jpg" alt="">
+    </div>
+    <div class="ecology_survey2" *ngIf="selectedMarineEcology">
+        <img (click)="openImagePopup('../../assets/Marine Survey Platforms/Marine Ecology Surveys/ecologysurvey4.jpg')"
+            src="../../assets/Marine Survey Platforms/Marine Ecology Surveys/ecologysurvey4.jpg" alt="">
+    </div>
+
+
+
+    <!-- Monitor Networks folders -->
+
+    <div class="air_quality_monitor" (click)="tapAirQ()" *ngIf="weatherMonitorList">
+        Air Quality Monitoring
+    </div>
+    <div class="ground_water_monitoringM" (click)="tapGwater()" *ngIf="weatherMonitorList">
+        Ground Water Monitoring
+    </div>
+    <div class="noise_monitoring" (click)="tapNoiseMonit()" *ngIf="weatherMonitorList">
+        Noise Monitoring
+    </div>
+    <div class="weather_monitoring" (click)="tapWeather()" *ngIf="weatherMonitorList">
+        Weather Monitoring
+    </div>
+
+
+    <!-- Air Quality monitor data-->
+    <div class="air_environment" *ngIf="selectedAirQuality">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Air Quality Monitoring/air environment.jpg')"
+            src="../../assets/Monitoring Networks/Air Quality Monitoring/air environment.jpg" alt="">
+    </div>
+    <div class="air_monitoring2" *ngIf="selectedAirQuality">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Air Quality Monitoring/airmonitoring.jpg')"
+            src="../../assets/Monitoring Networks/Air Quality Monitoring/airmonitoring.jpg" alt="">
+    </div>
+    <div class="air_quality1" *ngIf="selectedAirQuality">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Air Quality Monitoring/airquality1.jpg')"
+            src="../../assets/Monitoring Networks/Air Quality Monitoring/airquality1.jpg" alt="">
+    </div>
+    <div class="air_quality2" *ngIf="selectedAirQuality">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Air Quality Monitoring/Fixed Air Quality Monitoring.jpg')"
+            src="../../assets/Monitoring Networks/Air Quality Monitoring/Fixed Air Quality Monitoring.jpg" alt="">
+    </div>
+    <div class="mobile_air_quality" *ngIf="selectedAirQuality">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Air Quality Monitoring/Mobile Air quality.jpg')"
+            src="../../assets/Monitoring Networks/Air Quality Monitoring/Mobile Air quality.jpg" alt="">
+    </div>
+
+
+    <!-- ground water monitoring data-->
+    <div class="ground_water_monitoring" *ngIf="selctedgwaterMonitoring">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Ground Water Monitoring/ground water monitoring.jpg')"
+            src="../../assets/Monitoring Networks/Ground Water Monitoring/ground water monitoring.jpg" alt="">
+    </div>
+    <div class="g_water_quality" *ngIf="selctedgwaterMonitoring">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Ground Water Monitoring/Gwaterquality.jpg')"
+            src="../../assets/Monitoring Networks/Ground Water Monitoring/Gwaterquality.jpg" alt="">
+    </div>
+    <div class="g_water_quality1" *ngIf="selctedgwaterMonitoring">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Ground Water Monitoring/Gwaterquality1.jpg')"
+            src="../../assets/Monitoring Networks/Ground Water Monitoring/Gwaterquality1.jpg" alt="">
+    </div>
+    <div class="water_quality" *ngIf="selctedgwaterMonitoring">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Ground Water Monitoring/waterquality1.jpg')"
+            src="../../assets/Monitoring Networks/Ground Water Monitoring/waterquality1.jpg" alt="">
+    </div>
+
+    <!-- Noise Monitoring data-->
+    <div class="noise_monitor1" *ngIf="selectednoiseMonitoring">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Noise Monitoring/noise monitor.jpg')"
+            src="../../assets/Monitoring Networks/Noise Monitoring/noise monitor.jpg" alt="">
+    </div>
+    <div class="noise_monitoring2" *ngIf="selectednoiseMonitoring">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Noise Monitoring/Noise Monitoring.jpg')"
+            src="../../assets/Monitoring Networks/Noise Monitoring/Noise Monitoring.jpg" alt="">
+    </div>
+    <div class="noise1" *ngIf="selectednoiseMonitoring">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Noise Monitoring/noise.jpg')"
+            src="../../assets/Monitoring Networks/Noise Monitoring/noise.jpg" alt="">
+    </div>
+    <div class="noise2" *ngIf="selectednoiseMonitoring">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Noise Monitoring/noise2.jpg')"
+            src="../../assets/Monitoring Networks/Noise Monitoring/noise2.jpg" alt="">
+    </div>
+
+    <!-- Weather Monitor data-->
+    <div class="weather_monitor2" *ngIf="selectedweatherMonit">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Weather Monitoring/weather monitor2.jpg')"
+            src="../../assets/Monitoring Networks/Weather Monitoring/weather monitor2.jpg" alt="">
+    </div>
+    <div class="weather_monitoring_station" *ngIf="selectedweatherMonit">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Weather Monitoring/weather monitoring station.png')"
+            src="../../assets/Monitoring Networks/Weather Monitoring/weather monitoring station.png" alt="">
+    </div>
+    <div class="weather_monitoring3" *ngIf="selectedweatherMonit">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Weather Monitoring/weather monitoring.jpg')"
+            src="../../assets/Monitoring Networks/Weather Monitoring/weather monitoring.jpg" alt="">
+    </div>
+    <div class="weather" *ngIf="selectedweatherMonit">
+        <img (click)="openImagePopup('../../assets/Monitoring Networks/Weather Monitoring/whetehr.jpg')"
+            src="../../assets/Monitoring Networks/Weather Monitoring/whetehr.jpg" alt="">
+    </div>
+
+
+
+    <!-- Survey Platform folders-->
+
+    <div class="Habit_mapping" *ngIf="oilpollutionList" (click)="taphabbit()">
+        Habbit Mapping
+    </div>
+
+    <!-- habbit mapping data -->
+
+    <div class="landsurvey1" *ngIf="selectedhabit">
+        <img (click)="openImagePopup('../../assets/Survey Platforms/Habitat Mapping/1LANDSURVEY.jpg')"
+            src="../../assets/Survey Platforms/Habitat Mapping/1LANDSURVEY.jpg" alt="">
+    </div>
+    <div class="landsurvey2" *ngIf="selectedhabit">
+        <img (click)="openImagePopup('../../assets/Survey Platforms/Habitat Mapping/2LANDSURVEY.jpg')"
+            src="../../assets/Survey Platforms/Habitat Mapping/2LANDSURVEY.jpg" alt="">
+    </div>
+    <div class="landsurvey3" *ngIf="selectedhabit">
+        <img (click)="openImagePopup('../../assets/Survey Platforms/Habitat Mapping/ecologysurvey4.jpg')"
+            src="../../assets/Survey Platforms/Habitat Mapping/ecologysurvey4.jpg" alt="">
+    </div>
+    <div class="landsurvey4" *ngIf="selectedhabit">
+        <img (click)="openImagePopup('../../assets/Survey Platforms/Habitat Mapping/surevey platform 1.jpg')"
+            src="../../assets/Survey Platforms/Habitat Mapping/surevey platform 1.jpg" alt="">
+    </div>
+    <div class="landsurvey5" *ngIf="selectedhabit">
+        <img (click)="openImagePopup('../../assets/Survey Platforms/Habitat Mapping/survey platform.jpg')"
+            src="../../assets/Survey Platforms/Habitat Mapping/survey platform.jpg" alt="">
+    </div>
+
+    <!-- sattlite Based Environment  folder-->
+    <div class="habbitMap" (click)="taphabbitmap()" *ngIf="BuoyList">
+        Habbit Map
+    </div>
+    <div class="land_detection" (click)="taplandfill()" *ngIf="BuoyList">
+        Land Fill Detection
+    </div>
+    <div class="oil_spil" (click)="tapspill()" *ngIf="BuoyList">
+        Oil Spill Detection
+    </div>
+    <div class="sattlite_drived" (click)="tapsattlkitedrived()" *ngIf="BuoyList">
+        Sattlite Drived Bathymetry
+    </div>
+
+    <!-- habbit map data-->
+    <div class="habitmap1" *ngIf="selectedhabbit">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Habitat Map/Habitat Map 1.jpg')"
+            src="../../assets/Satellite Based Environmental Mapping/Habitat Map/Habitat Map 1.jpg" alt="">
+    </div>
+    <div class="habbitmap2" *ngIf="selectedhabbit">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Habitat Map/Habitat Map.jpg')"
+            src="../../assets/Satellite Based Environmental Mapping/Habitat Map/Habitat Map.jpg" alt="">
+    </div>
+    <div class="habbitmap3" *ngIf="selectedhabbit">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Habitat Map/Habitat Map2.jpg')"
+            src="../../assets/Satellite Based Environmental Mapping/Habitat Map/Habitat Map2.jpg" alt="">
+    </div>
+    <div class="ortho" *ngIf="selectedhabbit">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Habitat Map/ortho.jpg')"
+            src="../../assets/Satellite Based Environmental Mapping/Habitat Map/ortho.jpg" alt="">
+    </div>
+
+    <!-- Land Detection -->
+
+    <div class="land1" *ngIf="selectedlandfill">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Landfill Detection/GHGSAT_LANDFILL.jpg')"
+            src="../../assets/Satellite Based Environmental Mapping/Landfill Detection/GHGSAT_LANDFILL.jpg" alt="">
+    </div>
+    <div class="land2" *ngIf="selectedlandfill">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Landfill Detection/GHGSAT_LANDFILL.webp')"
+            src="../../assets/Satellite Based Environmental Mapping/Landfill Detection/GHGSAT_LANDFILL.webp" alt="">
+    </div>
+    <div class="land3" *ngIf="selectedlandfill">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Landfill Detection/GHGSAT_LANDFILL123.jpg')"
+            src="../../assets/Satellite Based Environmental Mapping/Landfill Detection/GHGSAT_LANDFILL123.jpg" alt="">
+    </div>
+    <div class="land4" *ngIf="selectedlandfill">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Landfill Detection/IMG10-DUMP-scaled-f44b9db6.png')"
+            src="../../assets/Satellite Based Environmental Mapping/Landfill Detection/IMG10-DUMP-scaled-f44b9db6.png"
+            alt="">
+    </div>
+    <div class="land5" *ngIf="selectedlandfill">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Landfill Detection/landfill_example.png')"
+            src="../../assets/Satellite Based Environmental Mapping/Landfill Detection/landfill_example.png" alt="">
+    </div>
+
+    <!-- oil spill data -->
+
+    <div class="oil1" *ngIf="selectedspill">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Oil Spil Detection/5fd10df9e6e1611a998bde10_oil-detection---possible-oil-spill-c-sentinel-1.jpg')"
+            src="../../assets/Satellite Based Environmental Mapping/Oil Spil Detection/5fd10df9e6e1611a998bde10_oil-detection---possible-oil-spill-c-sentinel-1.jpg"
+            alt="">
+    </div>
+    <div class="oil2" *ngIf="selectedspill">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Oil Spil Detection/oil spil.jpg')"
+            src="../../assets/Satellite Based Environmental Mapping/Oil Spil Detection/oil spil.jpg" alt="">
+    </div>
+    <div class="oil3" *ngIf="selectedspill">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Oil Spil Detection/Oil_pollution_monitoring_investigation.png.png')"
+            src="../../assets/Satellite Based Environmental Mapping/Oil Spil Detection/Oil_pollution_monitoring_investigation.png.png"
+            alt="">
+    </div>
+    <div class="oil4" *ngIf="selectedspill">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Oil Spil Detection/perdita_oil_mediterraneo.jpg')"
+            src="../../assets/Satellite Based Environmental Mapping/Oil Spil Detection/perdita_oil_mediterraneo.jpg"
+            alt="">
+    </div>
+
+    <!-- sattlite drived data -->
+    <div class="sat_drived1" *ngIf="selectedsattlkitedrived">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Satellite Derived Bathymetry/sat.png')"
+            src="../../assets/Satellite Based Environmental Mapping/Satellite Derived Bathymetry/sat.png" alt="">
+    </div>
+    <div class="sat_drived2" *ngIf="selectedsattlkitedrived">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Satellite Derived Bathymetry/Satellite Derived Bathymetry.png')"
+            src="../../assets/Satellite Based Environmental Mapping/Satellite Derived Bathymetry/Satellite Derived Bathymetry.png"
+            alt="">
+    </div>
+    <div class="sat_drived3" *ngIf="selectedsattlkitedrived">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Satellite Derived Bathymetry/sattt111.png')"
+            src="../../assets/Satellite Based Environmental Mapping/Satellite Derived Bathymetry/sattt111.png" alt="">
+    </div>
+    <div class="sat_drived4" *ngIf="selectedsattlkitedrived">
+        <img (click)="openImagePopup('../../assets/Satellite Based Environmental Mapping/Satellite Derived Bathymetry/sattt222.png')"
+            src="../../assets/Satellite Based Environmental Mapping/Satellite Derived Bathymetry/sattt222.png" alt="">
+    </div>
+
+
+    <!-- Monitoring Station fodlers -->
+
+    <div class="costalBuoy" (click)="t_coastal()" *ngIf="shipList">
+        Coastal Buoys
+    </div>
+    <div class="coatalStations" (click)="t_coastalstation()" *ngIf="shipList">
+        Coastal Stations
+    </div>
+    <div class="offshore" (click)="t_offshorem()" *ngIf="shipList">
+        Offshore
+    </div>
+
+
+    <!-- coastal sub folder data -->
+    <div class="costalbuoy1" *ngIf="selectedCoastalBuoy">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Coastal Buoys/wave buoy1.jpg')"
+            src="../../assets/Monitoring Stations/Coastal Buoys/wave buoy1.jpg" alt="">
+    </div>
+    <div class="costalbuoy2" *ngIf="selectedCoastalBuoy">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Coastal Buoys/wave buoy2.jpg')"
+            src="../../assets/Monitoring Stations/Coastal Buoys/wave buoy2.jpg" alt="">
+    </div>
+    <div class="costalbuoy3" *ngIf="selectedCoastalBuoy">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Coastal Buoys/wave buoy3.jpg')"
+            src="../../assets/Monitoring Stations/Coastal Buoys/wave buoy3.jpg" alt="">
+    </div>
+    <div class="costalbuoy4" *ngIf="selectedCoastalBuoy">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Coastal Buoys/wave buoy4.jpg')"
+            src="../../assets/Monitoring Stations/Coastal Buoys/wave buoy4.jpg" alt="">
+    </div>
+    <div class="costalbuoy5" *ngIf="selectedCoastalBuoy">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Coastal Buoys/wave buoy5.jpg')"
+            src="../../assets/Monitoring Stations/Coastal Buoys/wave buoy5.jpg" alt="">
+    </div>
+
+
+    <!-- coatal station sub folders -->
+    <div class="costalstaion1" *ngIf="selectedCoastalStation">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Coastal Stations/coastalstation1.jpg')"
+            src="../../assets/Monitoring Stations/Coastal Stations/coastalstation1.jpg" alt="">
+    </div>
+    <div class="costalstaion2" *ngIf="selectedCoastalStation">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Coastal Stations/groudstarion1.jpg')"
+            src="../../assets/Monitoring Stations/Coastal Stations/groudstarion1.jpg" alt="">
+    </div>
+    <div class="costalstaion3" *ngIf="selectedCoastalStation">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Coastal Stations/mandwa.jpg')"
+            src="../../assets/Monitoring Stations/Coastal Stations/mandwa.jpg" alt="">
+    </div>
+
+
+    <!-- offshore sub fodlers main -->
+
+    <div class="floats" (click)="t_float()" *ngIf="selectedoffshore">
+        Floats
+    </div>
+    <div class="lidarbuoy" (click)="t_lidar()" *ngIf="selectedoffshore">
+        Lidar Buoys
+    </div>
+    <div class="offshorebuoys" (click)="t_offshores()" *ngIf="selectedoffshore">
+        Offshore Buoys
+    </div>
+    <div class="profilers" (click)="t_profilers()" *ngIf="selectedoffshore">
+        Profilers
+    </div>
+    <div class="survey_vessels" (click)="t_surveyVessal()" *ngIf="selectedoffshore">
+        Survey Vessels
+    </div>
+    <div class="usv" (click)="t_usv()" *ngIf="selectedoffshore">
+        USV
+    </div>
+
+
+
+    <!-- float data-->
+    <div class="float1" *ngIf="s_float">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/Floats/Drifter buoys.jpg')"
+            src="../../assets/Monitoring Stations/Offshore/Floats/Drifter buoys.jpg" alt="">
+    </div>
+
+    <!-- Lidar Buoys data -->
+    <div class="lidar1" *ngIf="s_lidar">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/Lidar Buoys/lidar buoy1.jpg')"
+            src="../../assets/Monitoring Stations/Offshore/Lidar Buoys/lidar buoy1.jpg" alt="">
+    </div>
+    <div class="lidar2" *ngIf="s_lidar">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/Lidar Buoys/Lidar buoys.jpg')"
+            src="../../assets/Monitoring Stations/Offshore/Lidar Buoys/Lidar buoys.jpg" alt="">
+    </div>
+
+    <!-- Offshore data -->
+    <div class="offshore1" *ngIf="s_offshore">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/Offshore Buoys/Offshore Buoys.jpg')"
+            src="../../assets/Monitoring Stations/Offshore/Offshore Buoys/Offshore Buoys.jpg" alt="">
+    </div>
+    <div class="offshore2" *ngIf="s_offshore">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/Offshore Buoys/Offshore Buoys2.jpg')"
+            src="../../assets/Monitoring Stations/Offshore/Offshore Buoys/Offshore Buoys2.jpg" alt="">
+    </div>
+    <div class="offshore3" *ngIf="s_offshore">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/Offshore Buoys/Offshore Buoys3.jpg')"
+            src="../../assets/Monitoring Stations/Offshore/Offshore Buoys/Offshore Buoys3.jpg" alt="">
+    </div>
+    <div class="offshore4" *ngIf="s_offshore">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/Offshore Buoys/Offshore Buoys4.jpg')"
+            src="../../assets/Monitoring Stations/Offshore/Offshore Buoys/Offshore Buoys4.jpg" alt="">
+    </div>
+
+    <!-- Profilers -->
+    <div class="profile1" *ngIf="s_profilers">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/Profilers/Glider.jpg')"
+            src="../../assets/Monitoring Stations/Offshore/Profilers/Glider.jpg" alt="">
+    </div>
+    <div class="profiler2" *ngIf="s_profilers">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/Profilers/Profilers.png')"
+            src="../../assets/Monitoring Stations/Offshore/Profilers/Profilers.png" alt="">
+    </div>
+    <div class="profile3" *ngIf="s_profilers">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/Profilers/Wirewalker.jpeg')"
+            src="../../assets/Monitoring Stations/Offshore/Profilers/Wirewalker.jpeg" alt="">
+    </div>
+
+    <!-- Surevey vessel data -->
+    <div class="survey_vessel1" *ngIf="s_surveyVessal">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/Survey Vessels/ark2.jpg')"
+            src="../../assets/Monitoring Stations/Offshore/Survey Vessels/ark2.jpg" alt="">
+    </div>
+    <div class="survey_vessel2" *ngIf="s_surveyVessal">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/Survey Vessels/ECFS.jpg')"
+            src="../../assets/Monitoring Stations/Offshore/Survey Vessels/ECFS.jpg" alt="">
+    </div>
+    <div class="survey_vessel3" *ngIf="s_surveyVessal">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/Survey Vessels/TRIDEL ARK.jpg')"
+            src="../../assets/Monitoring Stations/Offshore/Survey Vessels/TRIDEL ARK.jpg" alt="">
+    </div>
+
+    <!-- USV data -->
+    <div class="usv1" *ngIf="s_usv">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/USV/USV.jpg')"
+            src="../../assets/Monitoring Stations/Offshore/USV/USV.jpg" alt="">
+    </div>
+    <div class="usv2" *ngIf="s_usv">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/USV/USV2.jpg')"
+            src="../../assets/Monitoring Stations/Offshore/USV/USV2.jpg" alt="">
+    </div>
+    <div class="usv3" *ngIf="s_usv">
+        <img (click)="openImagePopup('../../assets/Monitoring Stations/Offshore/USV/USV3.jpg')"
+            src="../../assets/Monitoring Stations/Offshore/USV/USV3.jpg" alt="">
+    </div>
+
+
+
+    <div class="image-popup" *ngIf="isImagePopupVisible" (click)="closeImagePopup()">
+        <img [src]="popupImageSrc" alt="Zoomed Image" [class.zoomed]="isZoomed" (click)="toggleZoom($event)">
+    </div>
 </div>
